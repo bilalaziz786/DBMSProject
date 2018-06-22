@@ -1,0 +1,35 @@
+ create table persona2_details
+      ( User_id int(20) Primary Key AUTO_INCREMENT,
+      First_Name varchar(20),
+     Last_Name varchar(20),
+      Gender varchar(20),
+     Birth_Date date,
+     State varchar(20),
+     City varchar(20),
+     Country varchar(20),
+University varchar(30),
+Department varchar(20),
+CPI dec(6,2),
+Address varchar(30));
+
+
+create table academic_details
+( User_id int(20) Primary Key,
+University varchar(20),
+Department varchar(20),
+CPI float(20));
+
+
+create table admin_details(
+Admin_id varchar(20) Primary Key,
+Admin_Password varchar(20));
+
+create table sign_in(
+Username varchar(20) Primary Key,
+Password varchar(20));
+
+create table sign_up2(
+Userid varchar(20) Primary Key,
+Password varchar(20),
+Phone bigint(20),
+Email varchar(30));
